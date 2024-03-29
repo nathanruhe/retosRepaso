@@ -23,7 +23,7 @@ console.log(resultado);
 
 
 
-// punto 4 PENDIENTE
+// punto 4
 let arcoiris:string[] = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
 
 function isRainbow(colors:string[]):void {
@@ -40,7 +40,7 @@ isRainbow(["verde", "negro", "blanco", "amarillo", "marron"]);
 
 
 // punto 5
-function add(myWords:string[]):number {
+export function add(myWords:string[]):number {
     let suma:number = 0;
     for (let element of myWords) {
         suma += element.length;

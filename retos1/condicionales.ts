@@ -52,7 +52,7 @@ console.log(continent("Japon"));
 
 
 // punto 4
-function isEven(number:number) {
+ export function isEven(number:number) {
     if(number % 2 == 0) {
         console.log("el numero es par");
     } else {
