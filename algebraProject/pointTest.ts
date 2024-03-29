@@ -11,3 +11,10 @@ myPoint.sety(20)
 console.log(myPoint.gety());
 
 console.log(myPoint.toString());
+
+// reto 2 punto 1
+console.log(myPoint.distanceToOrigin(5,2));
+
+// reto 2 punto 2
+let otroPoint:Point = new Point(7,5);
+console.log(myPoint.calculateDistance(otroPoint));

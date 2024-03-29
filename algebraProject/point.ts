@@ -23,5 +23,16 @@ export class Point {
         string = this.x + "," + this.y
         return string
     };
-};
 
+    // reto 2 punto 1
+    distanceToOrigin(x,y):number {
+        return Math.sqrt(x*x + y*y)
+    };
+
+    // reto 2 punto 2
+    calculateDistance(anotherPoint:Point):number {
+        let x:number = this.x - anotherPoint.x
+        let y:number = this.y - anotherPoint.y
+        return Math.sqrt(x*x + y*y)
+    };
+};
