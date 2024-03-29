@@ -31,8 +31,27 @@ export class Point {
 
     // reto 2 punto 2
     calculateDistance(anotherPoint:Point):number {
-        let x:number = this.x - anotherPoint.x
-        let y:number = this.y - anotherPoint.y
+        let x:number = myPoint.x - anotherPoint.x
+        let y:number = myPoint.y - anotherPoint.y
         return Math.sqrt(x*x + y*y)
     };
+
+    // reto 3
+    calcularQuadrant():number {
+        let cuadrado:number = -1;
+        if (this.x == 0 && this.y == 0) {
+            cuadrado = 0
+        } else if (this.x > 0 && this.y > 0) {
+            cuadrado = 1
+        } else if(this.x < 0 && this.y > 0) {
+            cuadrado = 2
+        } else if(this.x < 0 && this.y < 0) {
+            cuadrado = 3
+        } else if(this.x > 0 && this.y < 0) {
+            cuadrado = 4
+        } 
+        return cuadrado
+    };
 };
+
+let myPoint:Point = new Point(5,2);
