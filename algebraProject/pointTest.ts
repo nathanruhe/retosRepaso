@@ -21,3 +21,8 @@ console.log(myPoint.calculateDistance(otroPoint));
 
 // reto 3
 console.log(myPoint.calcularQuadrant());
+
+// reto 4
+let point1:Point = new Point(3,6);
+let point2:Point = new Point(7,8);
+console.log(myPoint.calculateNearest([point1, point2]));

@@ -52,6 +52,14 @@ export class Point {
         } 
         return cuadrado
     };
+
+    // reto 4
+    calculateNearest(points:Point[]):Point {
+        let ordena = points.sort((a, b) => {
+            return this.calculateDistance(a) - this.calculateDistance(b);
+        });
+        return ordena[0];
+    };
 };
 
 let myPoint:Point = new Point(5,2);
