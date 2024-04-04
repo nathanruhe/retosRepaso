@@ -2,8 +2,9 @@
 function hasEven(myNums:number[]) {
     let i = 0
     while (i < myNums.length) {
-        let letra = myNums.some((elem) => elem % 2 == 0)
-        return letra
+        if (myNums[i] % 2 == 0) {
+            return true;
+        }
         i++
     };
 };
@@ -16,10 +17,12 @@ console.log(existe);
 function startWithM(myNames:string[]) {
     let i = 0;
     while (i < myNames.length) {
-        let letra = myNames.every((elem) => elem[i][0] == "M")
-        return letra
+        if (myNames[i][0] !== "M") {
+            return false;
+        }
         i++
     };
+    return true
 };
-let nombres = startWithM(["Mario", "Maria", "Manolo"]);
+let nombres = startWithM(["Mario", "Maria", "David"]);
 console.log(nombres);
